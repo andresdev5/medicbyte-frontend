@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_reminders">
+
+    <fragment
+        android:id="@+id/nav_reminders"
+        android:name="ec.edu.espe.medicbyte.ui.reminders.RemindersFragment"
+        android:label="@string/menu_reminders"
+        tools:layout="@layout/fragment_reminders" />
+
+    <fragment
+        android:id="@+id/nav_medications"
+        android:name="ec.edu.espe.medicbyte.ui.medications.MedicationsFragment"
+        android:label="@string/menu_medications"
+        tools:layout="@layout/fragment_medications" />
+    <fragment
+        android:id="@+id/nav_reminder_form"
+        android:name="ec.edu.espe.medicbyte.ui.reminderform.ReminderFormFragment"
+        android:label="@string/menu_add_reminder"
+        tools:layout="@layout/fragment_reminder_form" />
+
+</navigation>
